@@ -1,33 +1,174 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Bienvenue sur gnss-pulse.fr</title>
-<meta name="description" content="Ce site est actuellement en construction.">
-<meta name="generator" content="hosting-page-builder">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="og:url" content="http://gnss-pulse.com/index.html">
-<meta name="og:locale" content="fr">
-<meta name="og:type" content="website">
-<meta name="og:title" content="Bienvenue sur gnss-pulse.com">
-<meta name="og:description" content="Ce site est actuellement en construction.">
-<meta name="og:updated_time" content="1762250540">
-<link rel="stylesheet" href="https://assets.storage.infomaniak.com/fonts/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<style>
-html,body{height:100%;padding:0;margin:0}.page{position:relative;display:table;table-layout:fixed;width:100%;height:100%;line-height:normal;text-align:center;font-family:Open Sans, sans-serif;font-size:1.1em;color:#fff;background-color:#f0f0f0;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;background-attachment:fixed}h1,h2,h3,h4,h5{line-height:1.3;font-weight:normal}.bg-position-top{background-position:50% 0}.bg-position-middle{background-position:50% 50%}.bg-position-bottom{background-position:50% 100%}.page:before{content:"";position:absolute;top:0;left:0;bottom:0;right:0;filter:alpha(opacity=40);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";opacity:0.4}img{max-width:100%;width:auto\9;height:auto}a,a:link{color:inherit;filter:alpha(opacity=85);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";opacity:0.85}a:hover,a:focus,a:active{filter:alpha(opacity=100);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";opacity:1;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}ul,ol{display:inline-block;text-align:left;max-width:50%}.container{position:relative;display:table-cell;width:100%;vertical-align:middle;padding:1em 2em;z-index:1}.content{max-width:900px;margin:0 auto}.social-links:empty{outline:1px solid yellow}.social-links{padding:1em 0;vertical-align:middle}.social-links a{padding:0 0.3em;line-height:normal}.hosting-info{position:absolute;display:block;bottom:0;left:0;right:0;padding:1em;font-size:0.8em}.hosting-info p{margin:0;padding:0;font-size:12px}.overlay-dark{background-color:#333}.overlay-dark:before{background-color:#333}.overlay-bright{background-color:white}.overlay-bright:before{background-color:white;filter:alpha(opacity=70);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";opacity:0.7}@media screen{.page[class]{background-image:url("https://assets.storage.infomaniak.website/images/background/unsplash/7oS_26cb1Wo-medium.jpg")}}body.debug:after{content:"default";position:fixed;left:0;bottom:0;background-color:white;color:black;padding:0.5em;font-size:10px;text-transform:uppercase}@media screen and (max-width: 640px){body.debug:after{content:"small"}h1{font-size:2em}ul,ol{max-width:none}.page{min-width:300px}.page .container{padding:3em}.page,.page[class]{background-image:url("https://assets.storage.infomaniak.website/images/background/unsplash/7oS_26cb1Wo-small.jpg")}}@media screen and (min-width: 641px) and (max-width: 1199px),(min-height:500px) and (max-height: 1199px){body.debug:after{content:"medium"}.page,.page[class]{background-image:url("https://assets.storage.infomaniak.website/images/background/unsplash/7oS_26cb1Wo-medium.jpg")}}@media screen and (min-width: 1200px){body.debug:after{content:"large"}.page,.page[class]{background-image:url("https://assets.storage.infomaniak.website/images/background/unsplash/7oS_26cb1Wo-large.jpg")}}.page .fallback-bg{display:none}.ie8 .page .fallback-bg{display:block;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;max-width:inherit;z-index:0}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GNSS-Pulse — GNSS Technology Consulting & Expertise</title>
+  <style>
+    :root {
+      --primary: #0b2545;
+      --secondary: #134074;
+      --accent-blue: #2563eb;
+      --light-bg: #f8fafc;
+      --text: #1e293b;
+      --text-muted: #475569;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text); background-color: var(--white); line-height: 1.5; }
+
+    /* Navigation Centrée */
+    nav { display: flex; justify-content: center; gap: 2.5rem; padding: 0.8rem 8%; background: var(--white); }
+    nav a { color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover { color: var(--accent-blue); }
+
+    /* Hero / En-tête épuré avec lignes épaisses et espacements réduits */
+    .hero { 
+      text-align: center; 
+      padding: 1.5rem 8% 1.2rem 8%; 
+      background-color: var(--white); 
+      border-top: 3px solid var(--secondary); 
+      border-bottom: 3px solid var(--secondary); 
+    }
+    .hero-logo { width: 100%; max-width: 520px; height: auto; margin: 0 auto 0.5rem auto; display: block; }
+    .hero-subtitle { 
+      font-size: 1.75rem; 
+      font-weight: 700; 
+      color: var(--secondary); 
+      text-transform: uppercase; 
+      letter-spacing: 1px;
+      line-height: 1.25;
+      margin-top: 0.3rem;
+    }
+
+    /* Sections principales (espacements divisés par deux) */
+    .section { padding: 1.8rem 8%; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-size: 1.7rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 3px solid var(--secondary); display: inline-block; padding-bottom: 0.3rem; letter-spacing: 0.5px; }
+    
+    .content-block { margin-bottom: 1rem; font-size: 1.05rem; }
+    h4 { color: var(--primary); margin: 1rem 0 0.5rem 0; font-size: 1.1rem; }
+    ul { margin-left: 1.8rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; font-size: 1rem; }
+    
+    .cir-box { background: var(--light-bg); border-left: 4px solid var(--secondary); padding: 1rem 1.2rem; margin: 1.2rem 0; font-style: italic; border-radius: 0 6px 6px 0; }
+
+    /* Rangée d'images côte à côte avec espacement réduit vers le bas */
+    .image-row { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; align-items: center; margin: 1.5rem 0 0.5rem 0; }
+    .image-row img { max-width: 45%; min-width: 280px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+
+    /* Formulaire de Contact */
+    .contact-container { background: var(--light-bg); padding: 1.8rem 8%; }
+    .contact-form { max-width: 600px; margin: 0 auto; background: var(--white); padding: 1.8rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; margin-bottom: 0.3rem; font-weight: 600; font-size: 0.95rem; color: var(--primary); }
+    .form-group input, .form-group textarea { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 0.95rem; }
+    .form-group textarea { height: 110px; resize: vertical; }
+    .btn-submit { width: 100%; padding: 0.85rem; background: var(--primary); color: var(--white); border: none; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+    .btn-submit:hover { background: var(--secondary); }
+    
+    footer { text-align: center; padding: 1.5rem; background: var(--primary); color: var(--white); font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-<div id="page" class="page  overlay-dark bg-position-middle">
-<div class="container">
-<div class="content"><h1>Bienvenue sur gnss-pulse.com</h1><p>Ce site est actuellement en construction.<br/>N'hésitez pas à venir le visiter prochainement!</p></div>
-<div class="social-links">
-</div>
-<div class="hosting-info">
-<p>Je crée mon site avec <a href="https://www.infomaniak.com/fr/hebergement" target="_blank">le meilleur hébergeur suisse</a>.</p>
-</div>
-</div>
-</div>
+
+  <!-- Menu de Navigation -->
+  <nav>
+    <a href="#offer">What I Offer</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- En-tête avec Logo, lignes épaisses et sous-titre sur 2 lignes -->
+  <header class="hero">
+    <img src="data/file/gnss_pulse_blanc_coul_1920px.jpg" alt="GNSS-Pulse Logo" class="hero-logo">
+    <h2 class="hero-subtitle">
+      GNSS Technology<br>
+      Consulting & Expertise
+    </h2>
+  </header>
+
+  <!-- Section WHAT I OFFER -->
+  <section id="offer" class="section">
+    <h3 class="section-title">WHAT I OFFER</h3>
+    <div class="content-block">
+      <p>GNSS-Pulse’s mission is to guide technical managers, decision-makers, and teams, helping them understand the complexities of signal physics, the resulting system aspects, and ensure the successful definition, development, and testing of their project through informed choices and the avoidance of unnecessary costs.</p>
+    </div>
+    
+    <h4>Sample of covered fields:</h4>
+    <ul>
+      <li>GNSS & LEO-PNT system evolution and signal physics.</li>
+      <li>Resilience against jamming, spoofing, and measurement errors. Compatibility analysis.</li>
+      <li>Spaceborne GNSS: Experience in mission definition and the use of spaceborne receivers, particularly on complex topics such as radio occultation, reflectometry, and jamming analysis.</li>
+      <li>Advanced Processing & Resilience: Deep expertise in measurement error mitigation, and signal quality monitoring.</li>
+      <li>Skills building through training tailored to your needs</li>
+    </ul>
+
+    <p>Whether you are defining a new positioning mission or a new use case, assessing the performance of your positioning system, or seeking high-level independent advice to minimize the risks your upcoming developments, let's connect to secure your project with targeted expertise.</p>
+
+    <div class="cir-box">
+      <strong>For French Businesses:</strong> GNSS-Pulse possède l'agrément Crédit Impôt Recherche (CIR) pour les années 2026-2027-2028, ce qui permet une déduction d'impôts de 30% sur les prestations éligibles au CIR.
+    </div>
+
+    <!-- Images côte à côte -->
+    <div class="image-row">
+      <img src="data/file/constellation_gps-1.png" alt="GNSS Constellation">
+      <img src="data/file/epo-award-5inventeurs.png" alt="European Inventor Award">
+    </div>
+  </section>
+
+  <!-- Section ABOUT ME -->
+  <section id="about" class="section">
+    <h3 class="section-title">ABOUT ME</h3>
+    <p class="content-block">After nearly 30 years at CNES shaping the core of GNSS technologies and leveraging their optimal user performance, I founded GNSS-Pulse to bring cutting edge GNSS expertise and independent consulting directly to industrial and institutional teams.</p>
+    
+    <h4>Key achievements:</h4>
+    <ul>
+      <li><strong>GALILEO:</strong> I was the lead inventor who inspired the design of the signals currently deployed on the GALILEO constellation, earning me the 2017 European Inventor Award.</li>
+      <li><strong>Other achievements:</strong> I invented the Long Coherent Integration method for Signal Quality Monitoring, as well as the first-ever carrier phase ambiguity resolution in GNSS reflectometry, and inspired numerous research and development initiatives.</li>
+    </ul>
+  </section>
+
+  <!-- Formulaire de Contact Formspree -->
+  <section id="contact" class="contact-container">
+    <div class="contact-form">
+      <h3 class="section-title" style="text-align: center; border: none; width: 100%;">CONTACT</h3>
+      <form action="https://formspree.io/f/mgaozbvo" method="POST">
+        <!-- Anti-spam Honeypot -->
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+        
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input type="url" id="website" name="website" placeholder="https://">
+        </div>
+        <div class="form-group">
+          <label for="email">Mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telephone">Telephone</label>
+          <input type="tel" id="telephone" name="telephone">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 GNSS-Pulse. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
